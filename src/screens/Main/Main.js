@@ -6,7 +6,7 @@ import LottieView from 'lottie-react-native';
 
 const waterBottle = require('./../../public/lottie/38282-water-bottle.json');
 
-const TWO_HOURS = 7200;
+const TWO_HOURS = 7200000;
 
 const styles = StyleSheet.create({
   container: {
