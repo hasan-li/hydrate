@@ -1,11 +1,12 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
-  View, Text, ActivityIndicator, StyleSheet,
+  View, Text, StyleSheet,
 } from 'react-native';
-import auth from '@react-native-firebase/auth';
+import LottieView from 'lottie-react-native';
+
+const waterBottle = require('./../../public/lottie/38282-water-bottle.json');
 
 const TWO_HOURS = 7200;
-// const TWO_HOURS = 7200000;
 
 const styles = StyleSheet.create({
   container: {
@@ -29,7 +30,6 @@ const Main = () => {
         seconds: Math.floor((difference / 1000) % 60),
       };
     }
-
     return timeLeft;
   };
 
@@ -65,8 +65,6 @@ const Main = () => {
   });
 
   useEffect(() => {
-    console.log(timerComponents.length);
-    console.log('timerComponents', timerComponents);
     if (!timerComponents.length) {
       setDisplayAnimation(true);
     }
@@ -74,12 +72,8 @@ const Main = () => {
 
   return (
     <View style={styles.container}>
-      <Text>Count: {initialTime}</Text>
-      {/* {displayHelper()} */}
       {timerComponents.length ? <View>{timerComponents}</View> : null}
-      {/* {timerComponents.length && <View><Text>{timerComponents}</Text></View>} */}
-
-      {displayAnimation && <Text>Animation</Text>}
+      {displayAnimation && <LottieView source={waterBottle} autoPlay loop />}
     </View>
   );
 };

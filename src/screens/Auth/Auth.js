@@ -10,7 +10,6 @@ const Auth = ({ navigation }) => {
   const [errorMessage, setErrorMessage] = useState(null);
 
   const handleLogin = () => {
-    // TODO: Firebase stuff...
     console.log('handleLogin', email, password);
     auth()
       .signInWithEmailAndPassword(email, password)
