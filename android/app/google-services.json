@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "553431739718",
+    "firebase_url": "https://hydrate-e5a5b.firebaseio.com",
+    "project_id": "hydrate-e5a5b",
+    "storage_bucket": "hydrate-e5a5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553431739718:android:03cba48248238aa816c947",
+        "android_client_info": {
+          "package_name": "com.hydrate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553431739718-psg6pqastpp7jt21msro3e2dr8og82ds.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcCQDsMPqFgx_baDLpCxSbh2SpzmEJ5Is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553431739718-psg6pqastpp7jt21msro3e2dr8og82ds.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
