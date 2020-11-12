@@ -150,6 +150,15 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            storeFile file('my-upload-key.keystore')
+            // storePassword System.console().readLine("\nKeystore password:")
+            // keyAlias System.console().readLine("\nAlias: ")
+            // keyPassword System.console().readLine("\nAlias password: ")
+            storePassword 'hg3090025'
+            keyAlias 'hg3090025'
+            keyPassword 'hg3090025'
+        }
     }
     buildTypes {
         debug {
@@ -186,6 +195,8 @@ dependencies {
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+
+    implementation project(':lottie-react-native')
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
       exclude group:'com.facebook.fbjni'
